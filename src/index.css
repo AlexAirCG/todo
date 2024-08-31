@@ -26,7 +26,36 @@ body {
 .todo__sidebar {
   background-color: #c6d4e2;
   width: 200px;
-  height: 100%;
+  height: calc(100% - 120px);
   border-right: 1px solid #f1f1f1;
   padding: 60px 20px;
+}
+
+.button {
+  background: #2eac75;
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.button:hover {
+  background: #289465;
+}
+.button:active {
+  background: #23845a;
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  width: 100%;
+  opacity: 0.8;
+}
+.field:focus {
+  border-color: #b6b3b3;
 }/*# sourceMappingURL=index.css.map */
