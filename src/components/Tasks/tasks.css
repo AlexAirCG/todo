@@ -1,0 +1,64 @@
+.tasks img {
+  margin-left: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.tasks img:hover {
+  opacity: 0.7;
+}
+.tasks__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #64c4ed;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #bdb7b7;
+}
+.tasks__item {
+  margin-top: 30px;
+}
+.tasks__item-row {
+  display: flex;
+  align-items: center;
+}
+.tasks__item-row input {
+  padding-left: 15px;
+  border: 0;
+  font-size: 16px;
+  width: 100%;
+}
+.tasks .checkbox input {
+  display: none;
+}
+.tasks .checkbox svg {
+  opacity: 0;
+}
+.tasks .checkbox:hover label {
+  background-color: #f2f2f2;
+  transition: all ease 0.3s;
+}
+.tasks .checkbox:hover label svg {
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+.tasks .checkbox label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #bdb7b7;
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.tasks .checkbox input:checked + label {
+  background-color: #4dd599;
+  border-color: #4dd599;
+}
+.tasks .checkbox input:checked + label svg {
+  opacity: 1;
+}
+.tasks .checkbox input:checked + label svg path {
+  stroke: #fff;
+}/*# sourceMappingURL=tasks.css.map */

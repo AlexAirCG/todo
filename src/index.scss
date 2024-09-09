@@ -11,11 +11,19 @@
 }
 
 body {
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .todo {
+  display: flex;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -28,11 +36,16 @@ body {
   font-size: 14px;
 
   &__sidebar {
-    background-color: #c6d4e2;
+    background-color: #eef1f3;
     width: 200px;
     height: calc(100% - 120px);
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
+  }
+
+  &__tasks {
+    flex: 1;
+    padding: 80px;
   }
 }
 

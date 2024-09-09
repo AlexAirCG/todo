@@ -8,11 +8,31 @@
 .list__add-button:hover {
   opacity: 1;
 }
+.list__remove-icon {
+  width: 12px;
+  height: 12px;
+}
 .list li {
   display: flex;
   align-items: center;
   padding: 10px 12px;
   cursor: pointer;
+  transition: all ease 0.3s;
+}
+.list li:hover .list__remove-icon {
+  opacity: 0.3;
+}
+.list li .list__remove-icon {
+  opacity: 0;
+}
+.list li .list__remove-icon:hover {
+  opacity: 0.8;
+}
+.list li span {
+  flex: 1;
+}
+.list li:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
 .list li.active {
   background: #ffffff;
