@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Badge from "../Badge";
 import List from "../List";
 import "./addlist.css";
@@ -6,8 +6,12 @@ import closeSvg from "../../assets/img/close.svg";
 
 const AddList = ({ colors, onAdd }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
-  const [selectedColor, selectColor] = useState(colors[0].id);
+  const [selectedColor, selectColor] = useState(3);
   const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    console.log(colors);
+  }, [colors]);
 
   const onClose = () => {
     setVisiblePopup(false);
