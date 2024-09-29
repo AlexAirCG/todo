@@ -1,3 +1,9 @@
+.tasks:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+.tasks a {
+  text-decoration: none;
+}
 .tasks img {
   opacity: 0.4;
   cursor: pointer;
@@ -7,7 +13,7 @@
   transition: all ease 0.3s;
 }
 .tasks__form {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .tasks__form-block .button {
   margin-right: 10px;
@@ -35,10 +41,10 @@
   transition: all ease 0.3s;
 }
 .tasks__title {
+  display: flex;
+  gap: 20px;
   border-bottom: 2px solid #bdb7b7;
   padding-bottom: 20px;
-}
-.tasks__title span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -66,8 +72,43 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #e8dede;
+  padding: 2px;
 }
-.tasks__item-row input {
+.tasks__item-row:hover {
+  border: 2px solid #d7c6c6;
+}
+.tasks__item-row:active {
+  border: 2px solid #4dd599;
+}
+.tasks__item-row-actions {
+  display: flex;
+  cursor: pointer;
+}
+.tasks__item-row-actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fafbfc;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.tasks__item-row-actions div:hover {
+  background-color: #b6c3d0;
+}
+.tasks__item-row-actions div:hover svg {
+  opacity: 0.7;
+}
+.tasks__item-row-actions svg {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+}
+.tasks__item-row p {
   padding-left: 15px;
   border: 0;
   font-size: 16px;
