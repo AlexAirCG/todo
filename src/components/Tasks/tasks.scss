@@ -1,4 +1,12 @@
 .tasks {
+  &:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   img {
     opacity: 0.4;
     cursor: pointer;
@@ -9,7 +17,7 @@
   }
 
   &__form {
-    margin-top: 50px;
+    margin-top: 30px;
 
     &-block {
       .button {
@@ -44,16 +52,16 @@
   }
 
   &__title {
+    display: flex;
+    gap: 20px;
     border-bottom: 2px solid #bdb7b7;
     padding-bottom: 20px;
-    span {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 39px;
-      color: #64c4ed;
-      margin-right: 20px;
-    }
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: #64c4ed;
+    margin-right: 20px;
   }
 
   &__item {
@@ -78,8 +86,48 @@
       display: flex;
       align-items: center;
       margin-bottom: 15px;
+      border-radius: 5px;
+      border: 2px solid darken(#ece4e4, 2%);
+      padding: 2px;
 
-      input {
+      &:hover {
+        border: 2px solid darken(#ece4e4, 10%);
+      }
+
+      &:active {
+        border: 2px solid #4dd599;
+      }
+
+      &-actions {
+        display: flex;
+        cursor: pointer;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          background-color: lighten(#f4f6f8, 2%);
+          border-radius: 6px;
+          margin-left: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken(#f4f6f8, 20%);
+            svg {
+              opacity: 0.7;
+            }
+          }
+        }
+        svg {
+          width: 12px;
+          height: 12px;
+          opacity: 0.5;
+        }
+      }
+
+      p {
         padding-left: 15px;
         border: 0;
         font-size: 16px;
